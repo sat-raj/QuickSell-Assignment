@@ -1,0 +1,63 @@
+/* Common styles for all screen sizes */
+.search-component {
+  display: flex;
+  flex-direction: column; /* Initially display as column on small screens */
+  gap: 20px; /* Adjust the space between sections */
+}
+
+.section {
+  flex: 1;
+  padding: 10px;
+  font-weight: lighter;
+}
+
+.sectionTitle {
+  font-size: larger;
+  font-weight: bold;
+  margin-right: 10%;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sectionTitleIcon {
+  display: flex;
+  flex-direction: row;
+  flex: 10;
+  align-items: baseline;
+}
+
+.sectionTitleButtons button {
+  background: none;
+  border: none;
+  padding: auto;
+  margin: auto;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  .search-component {
+    flex-direction: row; /* Display as row on larger screens */
+  }
+  
+  .section {
+    flex: 1;
+    padding: 10px;
+    font-weight: lighter;
+  }
+  
+  .sectionTitle {
+    margin-right: 10%;
+  }
+  
+  .sectionTitleIcon {
+    flex: 10;
+    align-items: baseline;
+  }
+}

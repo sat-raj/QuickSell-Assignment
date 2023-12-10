@@ -1,0 +1,59 @@
+/* Ticket card styling */
+.ticket-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  /* Apply gradient background */
+  background-image: linear-gradient(to bottom right, #ffffff, #cfe7fa); /* Change colors as desired */
+}
+  
+  /* Ticket details styling */
+  .ticket {
+    /* Your existing ticket styles */
+    transition: opacity 0.3s ease-in-out; /* Moved transition to .ticket class */
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+
+  .ticket.show {
+    opacity: 1; /* Change opacity to 1 for the show effect */
+  }
+
+  
+  .ticket div{
+    /* Your existing ticket styles */
+   padding: 5px;
+    
+  }
+  
+  /* Ticket header styling */
+  .ticket-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .ticket-bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Ticket priority styling */
+ 
+  /* Ticket title styling */
+  .ticket-title {
+    
+    font-weight: bold;
+    
+  }
+  .ticket-status{
+    margin-right: 10px;
+  }
+  
+  /* Ticket information styling */
+  .ticket-info {
+    margin: 5px 0;
+  }
+  
